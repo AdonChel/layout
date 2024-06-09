@@ -1168,6 +1168,15 @@ box-shadow: 2px 1px 14px 7px rgba(0,0,0,0.25);
     grid-column: 4 / 5;
 }
 
+.ul1 p a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.ul2 p a {
+    text-decoration: none;
+    color: #ffffff;
+}
 
 .ul2 {
     margin-top: -39%;
@@ -1194,6 +1203,7 @@ box-shadow: 2px 1px 14px 7px rgba(0,0,0,0.25);
     font-weight: 400;
     font-size: 18px;
     color: #ffffff;
+    text-decoration: none;
 }
 
 .footer-description2 {
@@ -1296,4 +1306,107 @@ box-shadow: 2px 1px 14px 7px rgba(0,0,0,0.25);
     margin-top: 57%;
     grid-row: 1;
     grid-column: 6 / 7;
+}
+
+.questions-header {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.questions-answers {
+    margin-top: -22%;
+    margin-left: 12%;
+}
+
+.questions {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+
+.question {
+    width: 779px;
+    height: 130px;
+    cursor: pointer;
+    transition: height 0.3s ease-in-out;
+    -webkit-box-shadow: 0px 9px 51px -12px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px 9px 51px -12px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 9px 51px -12px rgba(34, 60, 80, 0.2);
+}
+
+.question:nth-child(2) {
+    margin: 1% 0;
+}
+
+.question-header {
+    flex-direction: row;
+    display: flex;
+}
+
+.question-mark1 {
+    margin-top: 51px;
+    margin-left: 5%;
+    height: 30px;
+    width: 24px;
+    background-image: url("img/Question.png");
+}
+
+.question-mark2 {
+    margin-top: 51px;
+    margin-left: 5%;
+    height: 30px;
+    width: 24px;
+    background-image: url("img/Question.png");
+}
+
+.question-mark3 {
+    margin-top: 51px;
+    margin-left: 5%;
+    height: 30px;
+    width: 24px;
+    background-image: url("img/Question.png");
+}
+
+.question-p1 {
+    margin-left: -5%;
+    padding-left: 14%;
+    transition: transform 0.3s ease;
+    margin-top: 5%;
+}
+
+.question-p2 {
+    margin-left: -5%;
+    padding-left: 14%;
+    transition: transform 0.3s ease;
+    margin-top: 5%;
+}
+
+.question-p3 {
+    margin-left: -5%;
+    padding-left: 14%;
+    transition: transform 0.3s ease;
+    margin-top: 5%;
+}
+
+.answer {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+    overflow: hidden;
+    max-height: 0;
+    font-size: 18px;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+    margin-top: 3%;
+}
+
+.answer--visible {
+    opacity: 1;
+}
+
+.question--active {
+    height: 240px;
+    transition: height 0.3s ease-in-out;
 }
